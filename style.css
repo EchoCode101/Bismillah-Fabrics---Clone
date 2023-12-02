@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+	text-decoration: none;
+	color: #000;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	
+
+}
+/*------------HEADING------------*/
+h1{
+	font-size: 22px;
+	font-family: 'Ubuntu';
+	font-weight: 600;
+/*	padding-left: 100px;*/
+	justify-content: center;
+	text-align: center;
+	letter-spacing: 1px;
+}
+h1::after{
+	content:'';
+	background-color: #F6AC06 !important;
+	height: 3px;
+	overflow: hidden !important;
+	display: block;
+	margin: 10px auto 50px;
+}
+
+/*------------HEADING------------*/
+
+/*------------PARAGRAPH------------*/
+
+p{
+	font-family: 'Poppins';
+}
+
+/*------------PARAGRAPH------------*/
+/*------------TRANSITON------------*/
+
+.transition{
+	transition: all ease 0.4s !important;
+}
+
+/*------------TRANSITON------------*/
+/*---------Navigation-Bar STARTS---------*/
+
+.navbar-toggler{
+	border:1px solid #F6AC06 !important;
+	padding: 10px 8px !important;
+}
+#nav-bar{
+	background-color: #00001D;
+	position: fixed;
+	width: 100%;
+	/*height: 70px;*/
+	z-index: 99;
+}
+.navbar-brand img{
+	border-radius: 50px;
+	margin-bottom: 0px;
+
+}
+.navbar-brand img:hover{
+	transform: rotate(360deg);
+	transition: all ease 0.4s;
+}
+.navbar-brand span{
+	color: #eee !important;
+	margin-left: 15px;
+	margin-top: 55px !important;
+	font-weight: 600;
+	font-size: 22px;
+}
+.navbar-brand span:hover{
+	color: #FB4243 !important;
+	transition: all ease 0.4s;
+}
+.navbar-nav{
+	width: 100% !important;
+
+}
+.nav-item{
+	width: 100% !important;
+}
+.navbar-nav .nav-item .nav-link{
+	/*background-color: red !important;*/
+	color: #eee !important;
+	font-weight: 600;
+	font-size: 18px;
+	text-align: right;
+	float: right;
+	padding: 10px 0px;
+}
+.navbar-nav .nav-link:hover{
+	text-decoration: none;
+	color: #F6AC06 !important;
+	transition: all ease 0.4s;
+}
+
+/*---------Navigation-Bar END---------*/
+
+/*-------------Slider STARTS-------------*/
+#slider{
+	width: 100% !important;
+	padding-top: 70px;
+	overflow: hidden !important;
+}
+.carousel-inner img{
+	width: 100%;
+}
+.carousel-caption{
+	top:50%;
+	transform: translateY(-50%);
+	bottom: initial !important;
+}
+.carousel-caption h5{
+	color:#007bff;
+	font-size: 42px;
+	padding-bottom: 5px !important;
+	background: rgba(239,239,239,.8);
+}
+.carousel-indicators li{
+	margin-bottom: 30px;
+	padding-bottom: 5px;
+	color: #fff;
+	background-color: #00001D !important;
+	opacity: 1 !important;
+}
+.carousel-indicators .active{
+	background-color: #F6AC06 !important;
+	opacity: 1 !important;
+}
+.carousel-control-next-icon{
+	background-color: #FB4243 !important;
+}
+.carousel-control-prev-icon{
+	background-color: #FB4243 !important;
+}
+
+/*-------------Slider END-------------*/
+
+/*----------ABOUT SECTION STARTS---------*/
+#about{
+	margin-top: 50px;
+	width: 100% !important;
+	align-items: center !important;
+}
+/*-----------col-md-5-----------*/
+.col-md-5{
+	margin-top: 50px;
+	
+}
+.col-md-5 img{
+	border-radius: 220px 220px 170px 170px;
+	border: 2px solid #FB4243;
+	box-sizing: border-box;
+}
+.col-md-5 h2{
+	text-align: center;
+	font-weight: 500;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-decoration: none !important;
+}
+.col-md-5 h2:hover{
+	color: #FB4243;
+	text-decoration: underline #fff !important;
+}
+/*-----------col-md-5-----------*/
+
+/*-----------col-md-7-----------*/
+.col-md-7{
+	margin-top: 150px;
+
+}
+.col-md-7 h1{
+	font-weight: 600;
+	font-size: 48px;
+	text-align: center;
+}
+.col-md-7 h1::after{
+	width: 200px;
+}
+.col-md-7 h1:hover{
+	color:  #FB4243;
+	opacity: 0.8;
+	cursor: pointer;
+	transition: all ease 0.4s;
+}
+.col-md-7 p, a{
+	text-align: justify;
+	font-size: 19px;
+	font-weight: 500;
+	color: #555;
+/*	padding-left: 100px;*/
+}
+.col-md-7 a{
+	font-size: 24px;
+	color:  #555;
+	font-family: 'Poppins';
+}
+.col-md-7 a:hover{
+	color:  #FB4243;
+	text-decoration: none;
+	transition: all ease 0.3s;
+}
+/*-----------col-md-7-----------*/
+/*----------ABOUT SECTION END----------*/
+
+/*---------BG-TEXT SECTION STARTS---------*/
+#bg-img{
+	background: url(img/3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
+	background-attachment: fixed;
+	padding: 100px auto;
+	width: 100% !important;
+}
+.bg{
+	background-color: rgba(0,0,29,.5);
+
+}
+.bg h1{
+	color: #fff;
+	margin-top: 50px;
+	padding-top: 80px;
+	font-weight: 400;
+	font-size: 60px !important;
+}
+.bg h1::after{
+	width: 200px;
+	margin: 10px auto 50px;
+	overflow: hidden !important;
+	display: block;
+}
+.bg p{
+	text-align: center;
+	font-size: 22px;
+	font-family: 'Poppins';
+	font-weight: 400;
+	color: #fff;
+	padding:30px 0px 30px;
+	letter-spacing: 1px;
+}
+.bg button{
+	font-size: 22px;
+	font-family: 'Ubuntu';
+	font-weight: 600;
+	border: none !important;
+	padding: 20px 25px;
+	margin-bottom: 80px;
+	background: #F6AC06;
+	color: #000;
+/*	text-shadow: 2px 0px 20px rgba(0,0,0,0.4);*/
+}
+.bg button:hover{
+	color: #fff;
+	background: #FB4243;
+	transition: all ease 0.4s;
+} 
+/*---------BG-TEXT SECTION END---------*/
+/*------OUR MANUFACTURING SECTION STARTS------*/
+#manufacturing{
+	padding: 100px;
+	width: 100% !important;
+}
+#manufacturing{
+	background-color: #FB4243;
+
+}
+#manufacturing h1{
+	color: #fff;
+	font-weight: 600;
+	font-size: 48px;
+	overflow: hidden;
+	word-break: break-all;
+}
+#manufacturing h1:hover{
+	color: #00001D;
+	cursor: pointer;
+	transition: all ease 0.5s;
+}
+#manufacturing h1::after{
+	width: 200px;
+	display: block;
+	overflow: hidden !important;
+}
+.col-md-4 h3{
+	color: #fff;
+	font-family:  'Poppins';
+	margin-top: 30px;
+}
+.col-md-4 .sulzer{
+	border-radius: 500px;
+}
+#manufacturing a{
+	width: 100%;
+} 
+#manufacturing #btn{
+	font-size: 22px;
+	font-family: 'Ubuntu';
+	font-weight: 600;
+	margin-top: 50px;
+	padding: 10px;
+	width: 100%;
+	border: none;
+	color: #000;
+	background-color: #F6AC06 !important;
+}
+#manufacturing #btn:hover{
+	background-color: #fff !important;
+	color: #FB4243;
+	transition: all ease 0.5s;
+}
+.bx-1{
+	box-sizing: border-box;
+	border:  1px solid #fff;
+	border-radius: 150px 150px 120px 120px;
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+.bx-1:hover{
+	transform: translateY(-30px);
+	cursor: pointer;
+	transition: all ease 0.4s;
+}
+.bx-2{
+	box-sizing: border-box;
+	border:  1px solid #fff	;
+	border-radius: 150px 150px 120px 120px;
+	padding-bottom: 18px;
+	padding-top: 20px;
+}
+.bx-2:hover{
+	transform: translateY(-30px);
+	cursor: pointer;
+	transition: all ease 0.4s;
+}
+.bx-3{
+	box-sizing: border-box;
+	border:  1px solid #fff	;
+	border-radius: 150px 150px 120px 120px;
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+.bx-3:hover{
+	transform: translateY(-30px);
+	cursor: pointer;
+	transition: all ease 0.4s;
+}
+
+/*------OUR MANUFACTURING SECTION END------*/
+
+/*-------REQUEST A CALLBACK SECTION STARTS------- */
+
+.quote{
+	padding: 100px 0px;
+	
+	background-color:#00001D;
+}
+.quote h1{
+	font-family: 'Ubuntu';
+	font-weight: 600;
+/*	padding-left: 100px;*/
+	letter-spacing: 1px;
+	color: #fff;
+}
+.quote h1::after{
+	width: 200px;
+	display: block;
+	overflow: hidden !important;
+}
+.quote h4{
+	color: #fff;
+	text-align: center;
+/*	padding-left: 120px;*/
+}
+/*---------button---------*/
+#org{
+	margin-top: 50px;
+	padding: 15px 20px;
+	font-size: 22px;
+	font-family: 'Ubuntu';
+	font-weight: 600;
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: transparent;
+}
+#org:hover{
+	background-color: #fff;
+	color: #00001D;
+	transition: all ease 0.7s;
+}
+/*---------button---------*/
+/*-------REQUEST A CALLBACK SECTION END------- */
+
+/*-------CONTACT FORM STRATS------- */
+
+#col{
+	margin-top: 50px;
+}
+.col-md-4 h2{
+	color: #00001D;
+	font-weight: 600;
+	font-family:  'Poppins';
+	margin-top: 30px;
+}
+.col-md-4 h2::after{
+	content:'';
+	width: 150px;
+	background-color: #F6AC06 !important;
+	height: 3px;
+	overflow: hidden !important;
+	display: block;
+	margin: 10px auto 10px;
+}
+.form-group{
+	font-family: 'Ubuntu';
+	padding-bottom: 5px;
+}
+.form-control{
+	margin-top: 2px;
+	border: none !important;
+	border-radius: 0px !important;
+	border-top: 2px solid #ddd !important;
+	border-left: 2px solid #ddd !important;
+	background-color: #eee !important;
+
+}
+label{
+	font-family: 'Ubuntu';
+}
+label a{
+	text-decoration: none !important;
+	font-size: 16px !important;
+}
+#sbmt{
+	font-size: 22px;
+	font-family: 'Ubuntu';
+	font-weight: 600;
+	margin-top: 30px;
+	margin-bottom:50px; 
+	padding: 10px;
+	width: 100%;
+	border: none;
+	color: #000;
+	box-sizing: border-box;	
+	background-color: #F6AC06;
+}
+#sbmt:hover{
+	color: #fff;
+	transition: all ease 0.5s;
+	background-color: #00001D;
+}
+/*-------CONTACT FORM END------- */
+
+/*-----SOCIAL ICONS SECTION STARTS-----*/
+
+#col h2:hover{
+	cursor: pointer;
+	color: #FB4243;
+	transition: all ease 0.4s;
+}
+.fa{
+	font-size: 72px !important;
+	color: #00001D;
+}
+.fa:hover{
+	color: #FB4243;
+	transition: all ease 0.4s;
+}
+.r1{
+	margin-top: 50px;
+}
+.r2{
+	margin-top: 50px;
+}
+.r3{
+	margin-top: 50px;
+}
+
+/*-----SOCIAL ICONS SECTION END-----*/
+
+/*------- ADDRESS SECTION STARTS------- */
+
+#address{
+	margin-top: 50px;
+}
+#address h3{
+	color:  #FB4243;
+}
+#address h5{
+	line-height: 20px;
+	color: #555;
+}
+
+/*------- ADDRESS SECTION END------- */
+/*-------FOOTER SECTION STARTS------- */
+
+#footer{
+	width: 100%;
+	height: 70px;
+	background-color: #00001D;
+}
+#footer h6{
+	padding-top: 25px;
+	color: #FB4243;
+}
+#footer span{
+	color: #FB4243;
+	float: right;
+}
+#footer .fa{
+	font-size: 24px !important;
+	color: #F6AC06;
+}
+#designer h5{
+	padding-top: 22px;
+	color: #fff !important;
+}
+#span{
+	padding-top: 20px;
+}
+/*-------FOOTER SECTION END------- */
+
+
+
+/*-----------------------------------ABOUT PAGE STARTS-----------------------------------*/
+
+#about-page{
+	padding-top: 70px;
+}
+#about-page .row{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+#about-page .images{
+	/*border: 2px solid #FB4243;*/
+}
+#about-page img{
+	border-radius: 40px;
+}
+#about-page h1{
+	font-weight: 600;
+	margin-top: 50px;
+}
+#about-page h1::after{
+	width: 200px;
+}
+#about-page h2{
+	text-align: center;
+	font-weight: 500;
+	margin-top: 35px;
+	margin-bottom: 25px;
+	text-decoration: none !important;
+}
+#about-page h2:hover{
+	color: #FB4243;
+	text-decoration: underline #fff !important;
+	cursor: pointer;
+}
+#about-page h3{
+	color:  #FB4243;
+	font-family:  'Poppins';
+	margin-top: 30px;
+}
+#about-page ol{
+	list-style: none;
+ 
+}
+#about-page p{
+	text-indent: 50px;
+	letter-spacing: 0px;
+	line-height: 27px;
+	font-size: 20px;
+	color: #555;
+}
+#about-page .icons a{
+	letter-spacing: 20px;
+	text-decoration: none !important;
+}
+#about-page .fa{
+	font-size: 36px !important;
+}
+
+/*-----------------------------------ABOUT PAGE END-----------------------------------*/
+
+
+
+/*-----------------------------------CONTACT PAGE STARTS-----------------------------------*/
+#bg{
+	background: url(img/bg.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-position: center;
+	padding-top: 70px;
+}
+#col-4{
+	background-color: rgba(255,255,255,.8);
+}
+#col-4 center h2{
+	font-size: 36px;
+	font-weight: 600;
+}
+#col-4 .r1{
+	font-size: 48px;
+	margin-top: 50px;
+}
+#col-4 h3{
+	color: #FB4243 !important;
+}
+.info{
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+#col-4 .fa{
+	font-size: 65px !important;
+}
+#col-4 label font{
+	color: #fff !important;
+}
+/*-----------------------------------CONTACT PAGE END-----------------------------------*/
+
+
+
+/*-----------------------------------OUR MANUFACTURING PAGE STARTS-----------------------------------*/
+
+#our-manufacturing{
+	padding: 125px 0px;
+	background-color: rgba(0,0,0,0.07);
+}
+#our-manufacturing h1{
+	color: #00001D;
+	font-weight: 600;
+	font-size: 48px;
+	overflow: hidden;
+}
+#our-manufacturing h1::after{
+	width: 200px;
+}
+#our-manufacturing h1:hover{
+	color: #FB4243;
+	cursor: pointer;
+	transition: all ease 0.4s;
+}
+#our-manufacturing .col-md-6{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#our-manufacturing .col-md-6 h2{
+	color: #FB4243;
+	font-weight: 700 !important;
+	text-align: center;	
+	padding-top: 20px;
+
+}
+#our-manufacturing .col-md-6 p{
+	text-indent: 20px !important;
+	font-size: 18px;
+	color: #666;
+	padding: 10px 0px 15px 35px;
+}
+#our-manufacturing .col-md-6 img{
+	padding: 8px;
+}
+#our-manufacturing .col-md-6 button{
+	font-size: 22px;
+	font-family: 'Ubuntu';
+	font-weight: 600;
+	border: none !important;
+	padding: 20px 25px;
+	background: #F6AC06;
+	color: #000;
+}
+#our-manufacturing .col-md-6 button:hover{
+	color: #fff;
+	background: rgba(0,0,29,0.9);
+	transition: all ease 0.4s;
+}
+
+/*-----------------------------------OUR MANUFACTURING PAGE END-----------------------------------*/
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
